@@ -72,9 +72,10 @@ header img {
     position: absolute;
     top: 100%;
 }
-#nav_menu ul ul li {
 
-}
+/* #nav_menu ul ul li {
+
+} */
 #nav_menu ul li:hover > ul {
 	display: block;
 }
@@ -84,14 +85,14 @@ header img {
 }
 /* the styles for the main content */
 
-main{
+/* main{
 
-}
+} */
 
 /* the styles for the aside */
-aside {
+/*aside {
 	              /* 215 / 800 x 100 */           /* 20 / 800 x 100 */
-}
+/*} */
 aside h2 {
 	color: #800000;
 	font-size: 130%;
@@ -108,9 +109,11 @@ aside img {
 
 
 /* the styles for the section */
-section {
+
+/* section {
 	           /* 525 / 800 X 100 */      /* 20 / 800 x 100 */
-}
+/*} */ 
+
 section h1 {
 	font-size: 150%;
 	padding: .5em 0 .25em 0;
@@ -186,14 +189,20 @@ footer p {
 @media only screen and (max-width: 648px) {
 	header img { float: none; }
 	header { text-align: center; }
+	main{
+		display: flex;
+		flex-direction: column;
+	}
 	section {
 		flex-direction: column;
 		width: 95%;
+		order: 1;
 	}
 	aside {
 		flex-direction: column;
 		padding-right: 2.5%;
 		width: 95%;
+		order: 2;
 	}
 	article img { max-width: 30%; }
 	#speakers {
@@ -210,6 +219,7 @@ footer p {
 	}
 }
 
-@media only screen and (max-width: 414px) {
+/* @media only screen and (max-width: 414px) {
 	body { font-size: 90%; }
 }
+*/
